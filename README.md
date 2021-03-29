@@ -80,12 +80,14 @@ Instead, draw from the numerous existing d3 examples on the web, factoring the b
 
 If you use outside sources please provide a References section with links at the end of your Readme.
 
-Resources
+Resources / Ideas
 ---
 
 The "[Data is Plural](https://tinyletter.com/data-is-plural/archive)" weekly letter often contains interesting datasets.
 
 OurWorldInData has good datasets, as well.
+
+In general, implementing techniques from research papers, or conducting new experiments, is a solid way to get a project that is both within scope, interesting, and beneficial to you in the long run.
 
 Requirements
 ---
