@@ -16,8 +16,8 @@ function tooltipHtml(d) {	/* function to create html content string in tooltip d
 
 console.log(d5);
 
-d5.json("data/farm3.json").then(function (geo) {
-    d5.csv('data/farm_logs.csv').then(function (flogs) {
+d5.json("https://raw.githubusercontent.com/zihao777/datavis-final/main/data/farm3.json").then(function (geo) {
+    d5.csv('https://raw.githubusercontent.com/zihao777/datavis-final/main/data/farm_logs.csv').then(function (flogs) {
 
 
         var color_scale = d5.scaleQuantize([1, 120], d5.schemeYlGn[9]);
