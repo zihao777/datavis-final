@@ -226,6 +226,20 @@ window.onload = function () {
         }
     });
 
+lax.addElements(".map", {
+        scrollY: {
+            translateX: [["screenHeight*89/20", "screenHeight*9/2", "screenHeight*13/2", "screenHeight*131/20"], [-2000, 0, 0, -2000]],
+            opacity: [
+                ["screenHeight*9/2", "screenHeight*5", "screenHeight*6", "screenHeight*13/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+
     lax.addElements('#pinkZag', {
         scrollY: {
             translateY: [

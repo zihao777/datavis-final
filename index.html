@@ -14,10 +14,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-scrollLock.min.js"></script>
     <script src="js/lax.js"></script>
+    <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
     <script src="js/index.js"></script>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="js/radialTree.js"></script>
     <script src="js/soilTest.js"></script>
+    <script src="js/map.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -51,6 +53,7 @@
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
         </ol>
 
 
@@ -78,6 +81,12 @@
                 <img src="img/paralle coordinates.png" alt="...">
                 <div class="carousel-caption">
                     paralle coordinates
+                </div>
+            </div>
+            <div class="item item5">
+                <img src="img/map.png" alt="...">
+                <div class="carousel-caption">
+                    logs by area
                 </div>
             </div>
         </div>
@@ -141,6 +150,16 @@
 
     <div class="radialPie">
         <img src="img/Design1.jpg" alt="">
+    </div>
+
+    <div class="wrapper">
+        <div class="map">
+            <div class="select">
+                <span class="title">Logs by Area:</span>
+            </div>
+            <div class="box"></div>
+        </div>
+        <div class="board"></div>
     </div>
 
     <div class="radialBar">
