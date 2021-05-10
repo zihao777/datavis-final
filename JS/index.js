@@ -70,6 +70,13 @@ window.onload = function () {
         }
     });
 
+    lax.addElements(".processbook", {
+        scrollY: {
+            opacity: [["screenHeight*0.25", "screenHeight*0.5"], [1, 0]],
+            translateX: [["screenHeight*0.25", "screenHeight*0.5","screenHeight*0.6"], [0,0,3000]]
+        }
+    });
+
 
     lax.addElements(".scrolldown", {
         scrollY: {
@@ -154,6 +161,12 @@ window.onload = function () {
     $(".item1").on("click", function () {
         document.documentElement.scrollTop = screen.height * 9;
     })
+    $(".item5").on("click", function () {
+        document.documentElement.scrollTop = screen.height * 11;
+    })
+    $(".item6").on("click", function () {
+        document.documentElement.scrollTop = screen.height * 13;
+    })
 
 
     lax.addElements(".carousel", {
@@ -184,6 +197,19 @@ window.onload = function () {
         }
     });
 
+    lax.addElements(".radialTreeExplain", {
+        scrollY: {
+            opacity: [
+                ["screenHeight*5/2", "screenHeight*3", "screenHeight*4", "screenHeight*9/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+
     lax.addElements(".soilTest", {
         scrollY: {
             translateX: [["screenHeight*89/20", "screenHeight*9/2", "screenHeight*13/2", "screenHeight*131/20"], [-2000, 0, 0, -2000]],
@@ -198,9 +224,34 @@ window.onload = function () {
         }
     });
 
+    lax.addElements(".soilTestExplain", {
+        scrollY: {
+            opacity: [
+                ["screenHeight*9/2", "screenHeight*5", "screenHeight*6", "screenHeight*13/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+
     lax.addElements(".radialPie", {
         scrollY: {
             translateX: [["screenHeight*129/20", "screenHeight*13/2", "screenHeight*17/2", "screenHeight*171/20"], [-2000, 0, 0, -2000]],
+            opacity: [
+                ["screenHeight*13/2", "screenHeight*7", "screenHeight*8", "screenHeight*17/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+    lax.addElements(".radialPieExplain", {
+        scrollY: {
             opacity: [
                 ["screenHeight*13/2", "screenHeight*7", "screenHeight*8", "screenHeight*17/2"],
                 [0, 1, 1, 0]
@@ -226,10 +277,67 @@ window.onload = function () {
         }
     });
 
+    lax.addElements(".radialBarExplain", {
+        scrollY: {
+            opacity: [
+                ["screenHeight*17/2", "screenHeight*9", "screenHeight*10", "screenHeight*21/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+
+    lax.addElements(".prism", {
+        scrollY: {
+            translateX: [["screenHeight*209/20", "screenHeight*21/2", "screenHeight*25/2", "screenHeight*251/20"], [0, screen.width*4/5, screen.width*4/5, 0]],
+            opacity: [
+                ["screenHeight*21/2", "screenHeight*11", "screenHeight*12", "screenHeight*25/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    });
+    lax.addElements(".prismExplain", {
+        scrollY: {
+            opacity: [
+                ["screenHeight*21/2", "screenHeight*11", "screenHeight*12", "screenHeight*25/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+
+    lax.addElements(".calender", {
+        scrollY: {
+            translateX: [["screenHeight*249/20", "screenHeight*25/2", "screenHeight*29/2", "screenHeight*291/20"], [0, screen.width*4/5, screen.width*4/5, 0]],
+            opacity: [
+                ["screenHeight*25/2", "screenHeight*13", "screenHeight*14", "screenHeight*29/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    });
+    lax.addElements(".calenderExplain", {
+        scrollY: {
+            opacity: [
+                ["screenHeight*25/2", "screenHeight*13", "screenHeight*14", "screenHeight*29/2"],
+                [0, 1, 1, 0]
+            ]
+        }
+    }, {
+        style: {
+            display: "block"
+        }
+    });
+
     lax.addElements('#pinkZag', {
         scrollY: {
             translateY: [
-                ["screenHeight*10", "screenHeight*12"],
+                ["screenHeight*15", "screenHeight*16"],
                 [0, -screen.height * 3 / 2 - 1000]
             ],
         }
@@ -238,7 +346,7 @@ window.onload = function () {
     lax.addElements('#tealZag', {
         scrollY: {
             translateY: [
-                ["screenHeight*10", "screenHeight*12"],
+                ["screenHeight*15", "screenHeight*16"],
                 [0, -screen.height * 3 / 2 - 500]
             ],
         }
@@ -247,7 +355,7 @@ window.onload = function () {
     lax.addElements('#purpleZag', {
         scrollY: {
             translateY: [
-                ["screenHeight*10", "screenHeight*12"],
+                ["screenHeight*15", "screenHeight*16"],
                 [0, -screen.height * 3 / 2]
             ],
         }
@@ -256,7 +364,7 @@ window.onload = function () {
     lax.addElements('.end-bg', {
         scrollY: {
             translateY: [
-                ["screenHeight*10", "screenHeight*12"],
+                ["screenHeight*15", "screenHeight*16"],
                 [0, -screen.height * 2 / 3]
             ],
         }
@@ -265,8 +373,8 @@ window.onload = function () {
     lax.addElements('.car', {
         scrollY: {
             translateX: [
-                ["screenHeight*11", "screenHeight*12"],
-                [0, screen.width+400]
+                ["screenHeight*31/2", "screenHeight*16"],
+                [0, screen.width + 400]
             ]
         }
     })
@@ -274,12 +382,12 @@ window.onload = function () {
     lax.addElements('.thanks', {
         scrollY: {
             opacity: [
-                ["screenHeight*11", "screenHeight*12"],
+                ["screenHeight*15", "screenHeight*16"],
                 [0, 1]
             ],
             translateY: [
-                ["screenHeight*11", "screenHeight*12"],
-                [0, -screen.height / 2]
+                ["screenHeight*15", "screenHeight*16"],
+                [0, -screen.height / 2-200]
             ]
         }
     })

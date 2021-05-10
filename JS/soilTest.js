@@ -1,4 +1,3 @@
-console.log(d3)
 
 soilTestData = async function getCsvSoilTset() {
     var response = await d3.csv('data/soiltest.csv');
