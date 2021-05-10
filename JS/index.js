@@ -266,7 +266,7 @@ window.onload = function () {
         scrollY: {
             translateX: [
                 ["screenHeight*11", "screenHeight*12"],
-                [0, screen.width]
+                [0, screen.width+400]
             ]
         }
     })
