@@ -77,16 +77,6 @@ body {
     margin-left: 40px;
 }
 
-/* .letter-A {
-    margin-top: px;
-    position: fixed;
-    left: 50vw;
-    margin-left: -300px;
-    transform: scale(0.25);
-    transform-origin: 50% 50%;
-    width: 600px;
-    height: 600px;
-} */
 .scrolldown {
     bottom: 140px;
     height: 40px;
@@ -123,6 +113,7 @@ body {
 }
 
 div.carousel{
+    background-color: #242224;
     display: none;
     position: fixed;
     width: 60vw;
@@ -141,14 +132,14 @@ div.carousel-indicators li{
     background-color: #242224 !important;
 }
 
-/* .bubbles {
+ .bubbles {
     top: -100vh;
     position: fixed;
     -webkit-transform: translate3d(0, 0, 0);
     z-index: 5;
-} */
+} 
 
-/* .bubble {
+.bubble {
     width: 140px;
     height: 140px;
     opacity: 1;
@@ -165,9 +156,11 @@ div.carousel-indicators li{
 
 .bubble.yellow {
     background: #ffe773;
-} */
+} 
 
 div.radialTree{
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px 5px #ccc;
     position: fixed;
     left: -50vw;
     top: 50vh;
@@ -274,6 +267,35 @@ div.board{
     background-size: 200px;
     background-repeat: repeat-x;
     background-position-y: bottom;
+}
+
+div.end-bg{
+    background-color: #8d77ed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 100vh;
+}
+
+img.car{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 70vh;
+    margin-left: -200px;
+    z-index: 999;
+}
+
+h1.thanks{
+    position: fixed;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    top: 100vh;
+    left: 50vw;
+    line-height: 40px;
+    margin-left:-200px;
+    z-index: 999;
 }
 
 
