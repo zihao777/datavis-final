@@ -1,6 +1,6 @@
 
 soilTestData = async function getCsvSoilTset() {
-    var response = await d3.csv('data/soiltest.csv');
+    var response = await d3.csv('https://raw.githubusercontent.com/zihao777/datavis-final/main/data/soilTest.csv');
     return response
 }
 
