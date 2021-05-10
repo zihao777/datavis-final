@@ -98,33 +98,33 @@ window.onload = function () {
         }
     });
 
-    // lax.addElements(".bubble", {
-    //     scrollY: {
-    //         translateY: [
-    //             ["screenHeight/4", "screenHeight * 3.5"],
-    //             ["Math.random()*screenHeight", "Math.random()*screenHeight*3"]
-    //         ],
-    //         opacity: [
-    //             ["screenHeight/4", "screenHeight/2"],
-    //             [0, 1]
-    //         ],
-    //         scale: [[0], ["(Math.random()*0.8)+0.2"]],
-    //         translateX: [[0], ["index*(screenWidth/25)-50"]],
-    //         transform: [
-    //             [0, 4000],
-    //             [0, "(Math.random() + 0.8) * 1000"],
-    //             {
-    //                 cssFn: function (val) {
-    //                     return `rotateX(${val % 360}deg)`
-    //                 }
-    //             }
-    //         ],
-    //         rotate: [
-    //             [0, 4000],
-    //             [0, "(Math.random() - 0.5) * 1000"],
-    //         ],
-    //     }
-    // });
+    lax.addElements(".bubble", {
+        scrollY: {
+            translateY: [
+                ["screenHeight/4", "screenHeight * 5/2"],
+                ["Math.random()*screenHeight", "Math.random()*screenHeight*3"]
+            ],
+            opacity: [
+                ["screenHeight/4", "screenHeight/2", "screenHeight * 5/2"],
+                [0, 1, 0]
+            ],
+            scale: [[0], ["(Math.random()*0.8)+0.2"]],
+            translateX: [[0], ["index*(screenWidth/25)-50"]],
+            transform: [
+                [0, 4000],
+                [0, "(Math.random() + 0.8) * 1000"],
+                {
+                    cssFn: function (val) {
+                        return `rotateX(${val % 360}deg)`
+                    }
+                }
+            ],
+            rotate: [
+                [0, 4000],
+                [0, "(Math.random() - 0.5) * 1000"],
+            ],
+        }
+    });
     lax.addElements(".gallary", {
         scrollY: {
             translateX: [["screenHeight*19/40", "screenHeight/2", "screenHeight*5/2", "screenHeight*51/20"], [-2000, 0, 0, -2000]],
@@ -230,7 +230,7 @@ window.onload = function () {
         scrollY: {
             translateY: [
                 ["screenHeight*10", "screenHeight*12"],
-                [0, -screen.height]
+                [0, -screen.height * 3 / 2 - 1000]
             ],
         }
     })
@@ -239,7 +239,7 @@ window.onload = function () {
         scrollY: {
             translateY: [
                 ["screenHeight*10", "screenHeight*12"],
-                [0, -screen.height * 4 / 5]
+                [0, -screen.height * 3 / 2 - 500]
             ],
         }
     })
@@ -248,8 +248,39 @@ window.onload = function () {
         scrollY: {
             translateY: [
                 ["screenHeight*10", "screenHeight*12"],
-                [0, -screen.height * 3 / 5]
+                [0, -screen.height * 3 / 2]
             ],
+        }
+    })
+
+    lax.addElements('.end-bg', {
+        scrollY: {
+            translateY: [
+                ["screenHeight*10", "screenHeight*12"],
+                [0, -screen.height * 2 / 3]
+            ],
+        }
+    })
+
+    lax.addElements('.car', {
+        scrollY: {
+            translateX: [
+                ["screenHeight*11", "screenHeight*12"],
+                [0, screen.width]
+            ]
+        }
+    })
+
+    lax.addElements('.thanks', {
+        scrollY: {
+            opacity: [
+                ["screenHeight*11", "screenHeight*12"],
+                [0, 1]
+            ],
+            translateY: [
+                ["screenHeight*11", "screenHeight*12"],
+                [0, -screen.height / 2]
+            ]
         }
     })
 
