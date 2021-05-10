@@ -16,19 +16,19 @@ return tooltip;
 	}
 
 
-console.log(d3);
+//console.log(d3v5);
 
 d3.json("data/farm3.json").then(function(geo) {
 d3.csv('data/farm_logs.csv').then(function(flogs) {
 
 var mapVis = document.querySelector('.map');
 
-var color_scale = d3.scaleQuantize([1,120], d3.schemeYlGn[9]);
+var color_scale = d3v5.scaleQuantize([1,120], d3v5.schemeYlGn[9]);
 
 var farm_logs = flogs;
 console.log(farm_logs);
 
-var log_id = d3.map(flogs, d=>d.id);
+var log_id = d3v5.map(flogs, d=>d.id);
 console.log(log_id); 
 
 var fixed = geo.features.map(function(feature) {
@@ -39,15 +39,15 @@ var fixed = geo.features.map(function(feature) {
 var scale= 720058;
 var x=881084.6;
 var y=551059.9;
-var projection = d3.geoEquirectangular()
+var projection = d3v5.geoEquirectangular()
   .translate([x,y])
   .scale(scale);
 
-var geoGenerator = d3.geoPath()
+var geoGenerator = d3v5.geoPath()
   .projection(projection);
 
 // Join the FeatureCollection's features array to path elements
-var svg = d3.create('prism')
+var svg = d3v5.create('prism')
   .append('svg')
   .attr('width', 960)
   .attr('height', 600)
@@ -55,7 +55,7 @@ var svg = d3.create('prism')
   .data(geo.features); 
 
 // create a tooltip
-  var Tooltip = d3.select("prism")
+  var Tooltip = d3v5.select("prism")
     .append("div")
     .attr("class", "tooltip")
 
@@ -64,7 +64,7 @@ var svg = d3.create('prism')
   var mouseover = function(d) {
     Tooltip
       .style("opacity", 1)
-    d3.select(this)
+    d3v5.select(this)
       .style("stroke-width", "2")
       .attr("fill", "#90ee90")
   }
@@ -72,13 +72,13 @@ var svg = d3.create('prism')
     var logs = log_id.get(this.id)
     Tooltip
       .html(tooltipHtml(logs))
-      .style("left", (d3.mouse(this)[0]+5) + "px")
-      .style("top", (d3.mouse(this)[1]) + "px")
+      .style("left", (d3v5.mouse(this)[0]+5) + "px")
+      .style("top", (d3v5.mouse(this)[1]) + "px")
   }
   var mouseleave = function(d) {
     Tooltip
       .style("opacity", 0)
-    d3.select(this)
+    d3v5.select(this)
       .style("stroke-width", "1")
       .attr('fill', d=>color_scale(log_id.get(d.id).Logs))
   }
@@ -106,14 +106,14 @@ svg.enter()
 
 
 
-var mapZoom = d3.zoom()
+var mapZoom = d3v5.zoom()
   .on('zoom', zoomed);
 
-var zoomSettings = d3.zoomIdentity
+var zoomSettings = d3v5.zoomIdentity
   .translate(881084.6, 551059.9)
   .scale(720058);
 
-d3.select('#prism')
+d3v5.select('#prism')
   .call(mapZoom)
   .call(mapZoom.transform, zoomSettings)
   
@@ -122,7 +122,7 @@ function zoomed(event, d) {
     svg.attr("transform", event.transform);
   
 
-d3.selectAll('path')
+d3v5.selectAll('path')
     .attr('d', geoGenerator);
 
 }

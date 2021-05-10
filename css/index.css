@@ -235,6 +235,22 @@ div.board{
     height: 60vh;
 }
 
+div.map{
+    position: absolute;
+    display: none;
+    padding: 5px 10px ;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 3px;
+    border-radius: 4px;
+    z-index: 888;
+}
+
+
 .tooltip {   
     position: absolute;           
     text-align: center;
