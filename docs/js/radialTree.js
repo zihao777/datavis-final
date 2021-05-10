@@ -1,7 +1,7 @@
 console.log(d3);
 
 radialTreeData = async function getCsvRadialTree() {
-    var response = await d3.csv('data/FarmOS.csv');
+    var response = await d3.csv('https://raw.githubusercontent.com/zihao777/datavis-final/main/docs/data/FarmOS.csv');
     return response
 }
 
