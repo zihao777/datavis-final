@@ -13,10 +13,10 @@ Our website is a scrolling website. From the title page there is a link to our p
 
 //to do add Screen Cast here and in overview, add processbook in overview
 
-Overview
+File Overview
 ---
 - The root folder contains our index.html file and folders containing the rest of our project files
-- IllustratorFiles contains the two Adobe Illustrator visualiztion designs in ai and jpg format
+- IllustratorFiles contains the two Adobe Illustrator visualization designs in ai and jpg format
 - css contains our CSS style files
 - data contains the csv and json files for the d3 visualizations
 - fonts stores the font files
