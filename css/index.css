@@ -81,7 +81,7 @@ body {
     text-align: center;
     border: 1px solid white;
     position: fixed;
-    bottom: 60px;
+    top: 60px;
     height: 40px;
     width: 200px;
     right:60px;
