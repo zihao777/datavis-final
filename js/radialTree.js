@@ -90,8 +90,8 @@ radialTreeData().then(function (csv) {
     var BBox;
 
     svg
-        .attr('width', 800)
-        .attr('height', 800)
+        .attr('width', 1000)
+        .attr('height', 1000)
         .attr("viewBox", autoBox)
         .on('click', rest);
 
