@@ -80,7 +80,7 @@ radialTreeData().then(function (csv) {
                     translate(${d.y},0) 
                     rotate(${d.x >= Math.PI ? 180 : 0})
                 `)
-        .attr("dy", "0.31em")
+        .attr("dy", "0.15em")
         .attr("x", d => d.x < Math.PI === !d.children ? 6 : -6)
         .attr("text-anchor", d => d.x < Math.PI === !d.children ? "start" : "end")
         .attr('fill', 'white')
