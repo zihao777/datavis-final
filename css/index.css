@@ -152,7 +152,12 @@ div.carousel div.item img{
     width: 60vw;
     height: 60vh;
 }
-
+div.carousel div.item video{
+    width: 40vw;
+    height: 40vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
 div.carousel-indicators li{
     background-color: #242224 !important;
 }
