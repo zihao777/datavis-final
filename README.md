@@ -9,7 +9,7 @@ Our website is a scrolling website. From the title page there is a link to our p
 - Radial Pie (design)
 - Radial Bar (design)
 - Choropleth Map (interactive)
-- Calendar Heat Map (interactive but d3 version conflict)
+- Calendar Heat Map (interactive)
 
 //to do add Screen Cast here and in overview, add processbook in overview
 
