@@ -196,10 +196,10 @@ div.radialTree{
     position: fixed;
     left: -50vw;
     top: 50vh;
-    margin-left: -400px;
-    margin-top: -400px;
-    width: 800px;
-    height: 800px;
+    margin-left: -500px;
+    margin-top: -500px;
+    width: 1000px;
+    height: 1000px;
     z-index: 888;
 }
 
